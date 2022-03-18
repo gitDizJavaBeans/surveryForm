@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+html {
+background-color: black;
+}
+
+main {
+  background-color: black;
+  color: white;
+}
+
+.text-center{
+  text-align:center;
+}
+
+.container{
+  background-color: teal;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-top:1%;
+  padding-bottom: 2%;
+  color: white;
+  border-radius: 30%;
+}
+
+.form-group {
+  padding-top: 1%; 
+  padding-Bottom: 1%;
+}
+
+</style>
+
+<main>
+
+<h1 id="title" class="text-center" class = "red1">Title</h1>
+
+<p id="description" class="text-center">
+	description
+</p>
+  <div class="container">
+<form id="survery-form" class="text-center">
+  <div class="form-group">
+  <label id="name-label">Name</label>
+    <br>
+	<input 
+         type="text" 
+         placeholder="name"
+         id="name"
+         required/>
+  </div>
+    <div class="form-group">
+    <label id="email-label">Email</label>
+      <br>
+  <input
+         type="text" 
+         placeholder="email"
+         id="email"
+         required/>
+  </div>
+  <div class="form-group">
+    <label id="number-label">Number
+  </label>
+    <br>
+    <input
+         type="text" 
+         placeholder="number"
+         id="number"
+         min="10"
+         max="99"
+         required/>
+  </div>
+  <div class="form-group">
+    <select id="dropdown" name="position">
+      <option disable selected value>Choose</option>
+        <option value="contractor">contractor</option>
+    </select>
+      </div>
+  <div class="form-group">
+    <p> ipsum dorem </p>
+    <label>
+      <input
+             type="checkbox"
+             value="choice1"
+             class="input-checkbox"
+             />
+      choice1</label>
+    <br>
+        <label>
+      <input
+             type="checkbox"
+             value="choice2"
+             class="input-checkbox"
+             />
+      choice2</label>
+    
+    <div class="form-group">
+      <p>Text Feedback</p>
+      <textarea
+                id="feedback"
+                class="input-textarea"
+                placeholder="Enter feedback here."
+                >
+      </textarea>
+  <div class="form-group">
+    <button
+            type="submit"
+            id="submit"
+            class="submit-button"
+            >
+      Submit
+    </button>
+      </div>
+      </form>
+  </div>
+    </main>
